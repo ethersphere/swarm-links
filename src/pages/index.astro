@@ -1,0 +1,55 @@
+---
+import '../styles/base.css';
+import Layout from '../layouts/Layout.astro';
+import LinkCard from '../components/LinkCard.astro';
+import List from '../components/List.astro';
+
+---
+<Layout title="Swarm Roadmap">
+  <main class="pt-12 pb-24 md:pb-48 text-[19px] leading-[26px] text-[#F6F7F9]">
+
+		<div class="flex justify-center"><a href="https://www.ethswarm.org/"><img src="/swarm.png" alt="" class="h-12" /><div class="sr-only">Swarm</div></a></div>
+
+		<div class="max-w-2xl mx-auto px-5 lg:px-6 pt-20 pb-12 md:pt-28 md:pb-24">
+      <div class="text-center">
+
+        <p>Swarm is a decentralised data storage and distribution technology. Ready to power the next generation of censorship-resistant, unstoppable, serverless dapps.</p>
+
+      </div>
+		</div>
+
+    <div class="max-w-lg mx-auto px-5 lg:px-6 flex flex-col gap-12">
+      <List>
+          <LinkCard title="Website" description="Future storage. Now." image="/icons/swarm.png" href="https://www.ethswarm.org/" />
+          <LinkCard title="GitHub" image="/icons/github.jpeg" href="https://github.com/ethersphere" />
+          <LinkCard title="Main Papers" image="/icons/swarm.png" href="https://papers.ethswarm.org/" />
+          <LinkCard title="Network Status" image="/icons/swarm.png" href="https://network.ethswarm.org/" />
+      </List>
+
+
+      <List title="Markets $BZZ">
+          <LinkCard title="CMC" image="/icons/cmc.png" href="https://coinmarketcap.com/currencies/ethereum-swarm/" />
+          <LinkCard title="CoinGecko" image="/icons/coingecko.png" href="https://www.coingecko.com/en/coins/swarm" />
+      </List>
+
+      <List title="CEXs">
+          <LinkCard title="Gate.io" description="Trade BZZ on Gate.io" image="/icons/gateio.png" href="https://www.gate.io/trade/BZZ_USDT" />
+          <LinkCard title="MEXC" description="Trade BZZ on MEXC" image="/icons/MEXC.png" href="https://www.mexc.com/price/BZZ" />
+          <LinkCard title="XT.com" description="Trade BZZ on XT.com" image="/icons/XT.png" href="https://www.xt.com/en/price/coin/swarm-bzz" />
+      </List>
+
+      <List title="DEXs">
+          <LinkCard title="Uniswap" description="ETH/BZZ" image="/icons/uniswap.png" href="https://app.uniswap.org/swap?chain=ethereum&inputCurrency=ETH&outputCurrency=0x19062190B1925b5b6689D7073fDfC8c2976EF8Cb" />
+          <LinkCard title="Jumper Bridge" description="DAI to xBZZ" image="/icons/jumper.png" href="https://jumper.exchange/?fromChain=1&fromToken=0x6B175474E89094C44Da98b954EedeAC495271d0F&toChain=100&toToken=0xdBF3Ea6F5beE45c02255B2c26a16F300502F68da" />
+      </List>
+
+      <List title="Social Media">
+          <LinkCard title="X / Twitter" image="/icons/x.png" href="https://twitter.com/ethswarm" />
+          <LinkCard title="Discord" image="/icons/discord.png" href="https://discord.com/invite/hyCr9BMX9U" />
+          <LinkCard title="Reddit" image="/icons/reddit.png" href="https://reddit.com/r/ethswarm" />
+          <LinkCard title="YouTube" image="/icons/youtube.png" href="https://www.youtube.com/channel/UCu6ywn9MTqdREuE6xuRkskA/videos" />
+      </List>
+
+    </div>
+    </main>
+</Layout>

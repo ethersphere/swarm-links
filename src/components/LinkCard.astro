@@ -1,0 +1,33 @@
+---
+interface Props {
+	title: string;
+  description?: string;
+  image: string;
+  href: string;
+}
+
+const { title, description = "", image, href } = Astro.props;
+---
+<a href={href} target="_blank" rel="noopener noreferrer" class="py-4 px-3 no-underline items-center gap-6 rounded-xl bg-[#1F2831B2] border border-[#2D3843] shadow-card text-sm text-[#F6F7F9CC] leading-5 flex hover:bg-[#1F2831] transition-colors duration-200 hover:border-white/20">
+
+  <div class="flex flex-col grow gap-1">
+
+    <div class="flex gap-2 items-center">
+      <img src={image} alt={title} class="h-5" />
+      <h3 class="text-[#F6F7F9] font-bold text-[17px]">
+      {title}
+      </h3>
+    </div>
+
+    {description && (
+    <div>
+      <p class="text-[#F6F7F9CC] text-sm leading-5">
+        {description}
+      </p>
+    </div>
+    )}
+  </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="size-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+  </a>

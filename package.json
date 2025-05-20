@@ -1,0 +1,22 @@
+{
+  "name": "ethswarm-links",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.4.0",
+    "@astrojs/check": "^0.9.0",
+    "@floating-ui/react": "^0.27.8",
+    "@tailwindcss/vite": "^4.1.7",
+    "astro": "^5.7.0",
+    "astro-relative-links": "^0.4.2",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.8.3"
+  }
+}

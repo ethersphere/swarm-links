@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  a {
+    @apply underline;
+  }
+
+  .prose * + * {
+    @apply mt-4;
+  }
+
+  .prose ul {
+    @apply list-outside list-disc pl-6;
+  }
+
+  .prose li {
+    @apply mt-0;
+  }
+
+  .animate-spin-1500ms {
+    animation: spin 1.5s linear infinite;
+  }
+}

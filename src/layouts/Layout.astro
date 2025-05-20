@@ -1,0 +1,56 @@
+---
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+
+		<meta name="description" content="Embarking on the Journey to Swarm 3.0: A Year of Groundbreaking Developments" />
+		<link rel="icon" href="/favicon.png" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://roadmap.ethswarm.org" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="Embarking on the Journey to Swarm 3.0: A Year of Groundbreaking Developments" />
+		<meta property="og:image" content="https://roadmap.ethswarm.org/og.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://roadmap.ethswarm.org" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description"
+			content="Embarking on the Journey to Swarm 3.0: A Year of Groundbreaking Developments" />
+		<meta property="twitter:image" content="https://roadmap.ethswarm.org/og.png" />
+
+	</head>
+	<body
+		class="antialiased font-sans bg-[#0D1216] text-[#F6F7F9] bg-[url('/bg.png')] bg-no-repeat bg-contain bg-top"
+	>
+		<slot />
+
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+@import url('https://api.fonts.coollabs.io/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+[x-cloak] {
+  display: none !important;
+}
+</style>
