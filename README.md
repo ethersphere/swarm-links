@@ -1,12 +1,8 @@
 # Swarm Links - Astro
 
-## 🚀 Editing Content
+## 🚀 Editing Links
 
-Most of the content is placed in the `src/content/` directory. Each file is a markdown file with a frontmatter section at the top. The frontmatter section is used to define metadata about the content, like the title, subtitle, and status.
-
-The status can be omitted, but it's used to define the status of the content. The status can be `done`, `in-progress`, or `to-do`.
-
-The `items` field in the milestones is used to define the items that are part of the milestone. The items are defined by their filename without the `.md` extension. The `subtitle` field is used to define the list on the homepage.
+Simply edit the content in the `index.astro` and add the appropriate links in a `List`.
 
 ## 🧞 Commands
 
