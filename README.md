@@ -1,5 +1,8 @@
 # Swarm Links - Astro
 
+> **Maintained by:** devrel team
+
+
 ## 🚀 Editing Links
 
 Simply edit the content in the `index.astro` and add the appropriate links in a `List`.
